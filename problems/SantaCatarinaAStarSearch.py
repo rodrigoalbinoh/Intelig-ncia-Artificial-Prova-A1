@@ -1,6 +1,6 @@
 from search.utils.Node import Node
 from search.utils.Adjacent import Adjacent
-from search.AStar import AStar
+
 
 
 class SantaCatarinaMap:
@@ -76,9 +76,3 @@ class SantaCatarinaMap:
     jaraguaDoSul.addAdjacent(Adjacent(joinville, 53))
     jaraguaDoSul.addAdjacent(Adjacent(barraVelha, 62))
     jaraguaDoSul.addAdjacent(Adjacent(blumenau, 64))
-
-
-mapa = SantaCatarinaMap()
-
-astar = AStar(mapa.florianopolis)
-astar.search(mapa.joinville)
